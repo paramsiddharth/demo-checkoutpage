@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+		<title>Checkout</title>
+		<link rel='stylesheet' href='plugins/bootstrap.min.css'>
+		<link rel='stylesheet' href='style.css'>
+		<link rel='shortcut icon' href='icon.png'>
+	</head>
+	<body>
+		<main class='container'>
+			<div id='top' class='row justify-content-center'>
+				<div class='col-6'>
+					<h1 class='text-muted'>My Cart (<span class='totalCount'></span>)</h1>
+				</div>
+				<div class='col-5'>
+					<a href='#' class='btn btn-primary text-light float-right'>Continue Shopping</a>
+				</div>
+			</div>
+			<div class='row justify-content-center'>
+				<div id='products' class='col-12 col-md-8'>
+					Products here.
+				</div>
+				<div id='details' class='col-12 col-md-4 text-center'>
+					<h3 class='text-muted pricetag final-value'></h3>
+					(Current cart value)
+				<form onsubmit="()=>{}" class='text-left mt-3'>
+					<h5>Customer details</h5>
+					<div class='row'>
+						<label for='userName' class='col-12 col-md-3'>Name:</label>
+						<input type='text' id='userName' name='userName' class='col-12 col-md-6 offset-md-1'>
+					</div>
+					<div class='row'>
+						<label for='userEmail' class='col-12 col-md-3'>E-mail:</label>
+						<input type='email' id='userEmail' name='userEmail' class='col-12 col-md-6 offset-md-1'>
+					</div>
+					<div>
+						<label>Delivery options:</label>
+						<div class='form-check'>
+							<input class='form-check-input' checked type='radio' value='' id='delOpts1' name='delOpt'>
+							<label class='form-check-label' for='delOpts1'>Self Pick-up</label>
+						</div><div class='form-check'>
+							<input class='form-check-input' type='radio' value='' id='delOpts2' name='delOpt'>
+							<label class='form-check-label' for='delOpts2'>Delivery</label>
+						</div>
+					</div>
+					<div class='row'>
+						<label for='userPromo' class='col-12 col-md-4'>Promo Code:</label>
+						<input type='text' id='userPromo' name='userPromo' class='col-12 col-md-4'>
+						<div class='col-12 col-md-4'>
+							<button class='btn btn-warning text-white'>Apply</button>
+						</div>
+					</div>
+					<div class='row text-right border-bottom'>
+						<label class='col-6'>Total amount:</label>
+						<span class='col-6 pricetag final-value'>0.00</span>
+						<label class='col-6'>Discount:</label>
+						<span class='col-6 pricetag'>0.00</span>
+						<label class='col-6'>Delivery charge:</label>
+						<span class='col-6 pricetag delivery-charge'>0.00</span>
+					</div>
+					<div class='row text-right'>
+						<label class='col-6'>Amount payable:</label>
+						<span class='col-6 pricetag final-sum'>0.00</span>
+					</div>
+					<div>
+						<button class='btn btn-block btn-primary'>Checkout</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</main>
+		<script src='plugins/jquery-3.5.1.min.js'></script>
+		<script src='plugins/bootstrap.min.js'></script>
+		<script src='script.js'></script>
+	</body>
+</html>
