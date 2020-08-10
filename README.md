@@ -1,2 +1,2 @@
 # Checkout Page
-A simple cart checkout page. 
+A simple cart checkout page.
